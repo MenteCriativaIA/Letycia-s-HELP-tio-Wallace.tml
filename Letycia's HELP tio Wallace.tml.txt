@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inzoi 2026 | Letycia & Tio Wallace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cyber-black: #050505;
+            --cyber-purple: #bc13fe;
+            --cyber-green: #22c55e;
+            --cyber-silver: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--cyber-black);
+            color: var(--cyber-silver);
+            font-family: 'Space Grotesk', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .grunge-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 50;
+        }
+
+        .cyber-sigil {
+            filter: drop-shadow(0 0 8px var(--cyber-purple));
+        }
+
+        .glitch-text {
+            font-family: 'Syne', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            position: relative;
+        }
+
+        .neon-border {
+            border: 1px solid var(--cyber-purple);
+            box-shadow: 0 0 15px rgba(188, 19, 254, 0.3);
+        }
+
+        .card-hover:hover {
+            border-color: var(--cyber-green);
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .wolf-cut-bg {
+            background: linear-gradient(180deg, rgba(5,5,5,0) 0%, rgba(188, 19, 254, 0.1) 100%);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="grunge-overlay"></div>
+
+    <!-- Header Section -->
+    <header class="max-w-5xl mx-auto mb-12 relative">
+        <div class="flex flex-col md:flex-row justify-between items-end gap-6 border-b border-purple-900 pb-6">
+            <div>
+                <h1 class="glitch-text text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-green-400">
+                    Letycia.exe
+                </h1>
+                <p class="text-green-500 mt-2 font-mono tracking-tighter uppercase">Status: <span class="animate-pulse">Aura Infinita</span> // 2026_PROJECT</p>
+            </div>
+            <div class="text-right hidden md:block">
+                <p class="text-xs uppercase tracking-widest text-gray-500">Estética: Y2K Grunge / Alt Girl</p>
+                <p class="text-xs uppercase tracking-widest text-gray-500">Vibe: Cyber Sigilism</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- The "Request" / Emotional Blackmail Section -->
+    <main class="max-w-5xl mx-auto">
+        <section class="mb-16 bg-zinc-900/50 p-8 rounded-lg neon-border relative overflow-hidden">
+            <div class="absolute -right-10 -top-10 opacity-20 cyber-sigil">
+                <svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5L55 45L95 50L55 55L50 95L45 55L5 50L45 45L5 5Z" stroke="#bc13fe" stroke-width="0.5"/>
+                    <circle cx="50" cy="50" r="10" stroke="#22c55e" stroke-width="0.5"/>
+                </svg>
+            </div>
+
+            <h2 class="text-3xl font-bold mb-6 text-purple-400">Papo Reto, Tio Wallace... 💅</h2>
+            <div class="space-y-4 text-lg text-gray-300 leading-relaxed">
+                <p>
+                    Tio, namoralzinha? Não deixa meu setup <span class="text-green-400">flopar</span>. 
+                    Eu sei que você é o <span class="italic">GOAT</span> da montagem, mas vamos refrescar essa memória rápida?
+                </p>
+                <blockquote class="border-l-4 border-green-500 pl-4 py-2 bg-green-500/10 italic text-green-200">
+                    "Lembra quando você tava começando e meu pai e minha mãe te deram aquele help supremo? 
+                    Pois é, eles que pagaram o seu curso de montagem de PC! Agora chegou a hora de você <span class="uppercase font-bold">macetar</span> nesse meu computador novo."
+                </blockquote>
+                <p>
+                    É a dívida histórica, né? 😂 Minha <span class="text-purple-400">aura</span> vai pro infinito se você montar essas peças. 
+                    Não aceito nada menos que um cable management de <span class="italic text-white">Diva</span>. Slay?
+                </p>
+            </div>
+        </section>
+
+        <!-- Hardware Specs Section -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-8">
+                <h3 class="text-2xl font-bold tracking-widest uppercase text-white">Configuração // Inzoi 2026</h3>
+                <div class="h-[1px] flex-grow bg-zinc-800"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- GPU -->
+                <div class="p-5 bg-zinc-900 border border-zinc-800 card-hover rounded-md">
+                    <span class="text-xs text-purple-500 font-mono">01_GPU</span>
+                    <h4 class="font-bold text-lg mt-1">Gigabyte RTX 5060 WindForce Max</h4>
+                    <p class="text-sm text-gray-400 mt-2">8GB GDDR7 - Potência máxima pros meus simuladores não travarem.</p>
+                </div>
+
+                <!-- CPU -->
+                <div class="p-5 bg-zinc-900 border border-zinc-800 card-hover rounded-md">
+                    <span class="text-xs text-purple-500 font-mono">02_CPU</span>
+                    <h4 class="font-bold text-lg mt-1">AMD Ryzen 7 5700X</h4>
+                    <p class="text-sm text-gray-400 mt-2">8-Core / 16-Threads - Agilidade total pra quem faz 50 coisas ao mesmo tempo.</p>
+                </div>
+
+                <!-- RAM -->
+                <div class="p-5 bg-zinc-900 border border-zinc-800 card-hover rounded-md">
+                    <span class="text-xs text-purple-500 font-mono">03_RAM</span>
+                    <h4 class="font-bold text-lg mt-1">32GB T-Force Vulcan Z</h4>
+                    <p class="text-sm text-gray-400 mt-2">4x 8GB DDR4 3200MHz - Sem chance de dar gargalo no meu Inzoi.</p>
+                </div>
+
+                <!-- Motherboard -->
+                <div class="p-5 bg-zinc-900 border border-zinc-800 card-hover rounded-md">
+                    <span class="text-xs text-purple-500 font-mono">04_MOBO</span>
+                    <h4 class="font-bold text-lg mt-1">MSI B550M Pro-VDH WiFi</h4>
+                    <p class="text-sm text-gray-400 mt-2">Preto & Robusta - Já vem com Wi-Fi pra eu não depender de cabo.</p>
+                </div>
+
+                <!-- Storage -->
+                <div class="p-5 bg-zinc-900 border border-zinc-800 card-hover rounded-md">
+                    <span class="text-xs text-purple-500 font-mono">05_NVME</span>
+                    <h4 class="font-bold text-lg mt-1">1TB Kingston NV2</h4>
+                    <p class="text-sm text-gray-400 mt-2">3500MB/s - Meus jogos vão carregar mais rápido que meu humor muda.</p>
+                </div>
+
+                <!-- Cooler -->
+                <div class="p-5 bg-zinc-900 border border-zinc-800 card-hover rounded-md">
+                    <span class="text-xs text-purple-500 font-mono">06_COOLER</span>
+                    <h4 class="font-bold text-lg mt-1">Thermalright Assassin 120 EVO</h4>
+                    <p class="text-sm text-gray-400 mt-2">ARGB Preto - Estética impecável pra combinar com o preto do setup.</p>
+                </div>
+
+                <!-- Case -->
+                <div class="p-5 bg-zinc-900 border border-zinc-800 card-hover rounded-md">
+                    <span class="text-xs text-purple-500 font-mono">07_CASE</span>
+                    <h4 class="font-bold text-lg mt-1">Mancer Goblin V2 (White)</h4>
+                    <p class="text-sm text-gray-400 mt-2">Lateral de Vidro - Pra todo mundo ver seu trabalho de mestre, Tio.</p>
+                </div>
+
+                <!-- PSU -->
+                <div class="p-5 bg-zinc-900 border border-zinc-800 card-hover rounded-md">
+                    <span class="text-xs text-purple-500 font-mono">08_PSU</span>
+                    <h4 class="font-bold text-lg mt-1">MSI MAG A650BN - 650W</h4>
+                    <p class="text-sm text-gray-400 mt-2">80 Plus Bronze - Energia estável pra não queimar meu sonho.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aesthetic Footer Call -->
+        <section class="text-center mb-12">
+            <div class="inline-block relative">
+                <button onclick="alert('Enviando sinal de socorro para o Tio Wallace... 📡')" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-12 rounded-full text-xl transition-all shadow-[0_0_20px_rgba(188,19,254,0.5)]">
+                    MONTA PRA MIM, TIO! 🛠️✨
+                </button>
+                <div class="mt-4 text-zinc-500 text-sm uppercase tracking-widest animate-bounce">
+                    #NoFlop #InzoiReady #TioWallaceMonta
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Marquee Footer -->
+    <footer class="fixed bottom-0 left-0 w-full bg-purple-900/20 backdrop-blur-md border-t border-purple-500/30 py-2 overflow-hidden z-40">
+        <div class="scrolling-text text-purple-300 text-xs font-mono uppercase">
+            Y2K GRUNGE ESTHETIC • LETYCIA INZOI 2026 • RTX 5060 POWER • NO BASIC ALLOWED • TIO WALLACE DÍVIDA HISTÓRICA • CYBER SIGILISM • ALT GIRL VIBES • WOLF CUT • DARK MODE EVERYTHING • 
+        </div>
+    </footer>
+
+    <script>
+        // Pequena animação de entrada pros cards
+        document.querySelectorAll('.card-hover').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                card.style.transition = 'all 0.5s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 100 * index);
+        });
+    </script>
+</body>
+</html>
